@@ -1,72 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create Tailwind</title>
+    <title>Tailwind Mega Menu</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
 
-  <body
-    class="h-screen bg-gradient-to-b from-gray-900 to-slate-800 flex flex-col text-white"
-  >
-    <header class="py-16">
-      <h1 class="text-4xl font-bold text-center mb-6">Create Tailwind</h1>
-      <div class="flex flex-row justify-center items-center gap-4">
-        <a
-          class="github-button"
-          href="https://github.com/andrejjurkin/create-tailwind-app"
-          data-color-scheme="no-preference: dark; light: dark; dark: dark;"
-          data-icon="octicon-star"
-          data-size="large"
-          data-show-count="true"
-          aria-label="Star andrejjurkin/create-tailwind-app on GitHub"
-          >Star</a
-        >
-        <a
-          class="github-button"
-          href="https://github.com/andrejjurkin/create-tailwind-app/discussions"
-          data-color-scheme="no-preference: dark; light: dark; dark: dark;"
-          data-icon="octicon-comment-discussion"
-          data-size="large"
-          aria-label="Discuss andrejjurkin/create-tailwind-app on GitHub"
-          >Discuss</a
-        >
-      </div>
-    </header>
+  <body class="h-full bg-gradient-to-br from-indigo-500 to-pink-700 via-blue-800 antialiased bg-no-repeat text-white">
+  <header class="container mx-auto px-4 py-6 flex items-center justify-between">
+    <a href="/" class="font-bold text-xl text-white">Pipe</a>
+    <nav>
+      <ul class="font-semibold flex items-center justify-center">
+        <li class="relative group px-3 py-2">
+          <button class="hover:opacity-50 cursor-default">Products</button>
+          <div class="absolute top-0 left-0 transition">
+            hello
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <nav>
+      <ul>
+        <li>
+          <a href=# class="rounded-full px-3 py-2 font-semibold bg-white bg-opacity-10 flex items-center group">
+            <span class="mr-2">Sign In</span>
+            <svg class="stroke-current" width="10" height="10" stroke-width="2" aria-hidden="true" viewBox="0 0 10 10">
+              <g fill-rule="evenodd">
+                <path d="M0 5h7" class="opacity-0 group-hover:opacity-100 transition ease-in-out duration-200">
 
-    <main class="flex-1">
-      <section class="text-center">
-        <div class="w-full grid place-items-center p-12">
-          <a href="https://vitejs.dev/">
-            <img src="/vite.svg" alt="Vite" class="h-24" />
+                </path>
+                <path d="M1 1l4 4-4 4" class="opacity-100 group-hover:transform group-hover:translate-x-1 transition ease-in-out duration-200"> 
+                  
+                </path>
+              </g>
+            </svg>
           </a>
-        </div>
-        <h2 class="text-3xl font-bold text-center">Created With Vite</h2>
-        <p class="mb-6">The Next Generation Frontend Tooling</p>
-        <ul
-          class="flex flex-row items-center w-full gap-8 justify-center text-blue-300 font-medium"
-        >
-          <li>
-            <a href="https://vitejs.dev/">Learn More</a>
-          </li>
-          <li>
-            <a href="https://vitejs.dev/guide/why.html">Why Vite?</a>
-          </li>
-        </ul>
-      </section>
-    </main>
-
-    <footer class="px-8 py-12 border-t border-gray-800">
-      <div class="px-8 font-medium text-center">
-        <a href="https://github.com/andrejjurkin/create-tailwind-app">
-          Create Tailwind
-        </a>
-      </div>
-    </footer>
-    <script type="module" src="/main.js"></script>
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+        </li>
+      </ul>
+    </nav>
+  </header>
   </body>
 </html>
